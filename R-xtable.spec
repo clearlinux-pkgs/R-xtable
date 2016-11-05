@@ -4,7 +4,7 @@
 #
 Name     : R-xtable
 Version  : 1.8
-Release  : 2
+Release  : 3
 URL      : https://cran.r-project.org/src/contrib/xtable_1.8-2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xtable_1.8-2.tar.gz
 Summary  : Export Tables to LaTeX or HTML
