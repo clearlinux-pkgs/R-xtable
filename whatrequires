@@ -1,0 +1,14 @@
+# This file contains recursive sources that require this package
+R-BayesFactor
+R-JM
+R-coin
+R-emmeans
+R-lfe
+R-lsmeans
+R-mcmc
+R-ordinal
+R-phangorn
+R-pkgmaker
+R-robustbase
+R-shiny
+R-shinystan
