@@ -4,15 +4,15 @@
 #
 Name     : R-xtable
 Version  : 1.8.3
-Release  : 21
+Release  : 22
 URL      : https://cran.r-project.org/src/contrib/xtable_1.8-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xtable_1.8-3.tar.gz
 Summary  : Export Tables to LaTeX or HTML
 Group    : Development/Tools
 License  : GPL-2.0+
-Requires: R-evaluate
-Requires: R-stringi
+Requires: R-highr
 BuildRequires : R-evaluate
+BuildRequires : R-highr
 BuildRequires : R-stringi
 BuildRequires : buildreq-R
 BuildRequires : texlive
@@ -28,11 +28,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1535827565
+export SOURCE_DATE_EPOCH=1552836958
 
 %install
+export SOURCE_DATE_EPOCH=1552836958
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1535827565
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -67,8 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library xtable|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  xtable || :
 
 
 %files
@@ -109,3 +108,9 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/xtable/help/xtable.rdx
 /usr/lib64/R/library/xtable/html/00Index.html
 /usr/lib64/R/library/xtable/html/R.css
+/usr/lib64/R/library/xtable/tests/test.margintable.R
+/usr/lib64/R/library/xtable/tests/test.matharray.R
+/usr/lib64/R/library/xtable/tests/test.xalign.xdigits.xdisplay.R
+/usr/lib64/R/library/xtable/tests/test.xtable.R
+/usr/lib64/R/library/xtable/tests/test.xtable.data.frame.R
+/usr/lib64/R/library/xtable/tests/test.xtable.xtableFtable.R
