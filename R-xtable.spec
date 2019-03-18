@@ -4,13 +4,12 @@
 #
 Name     : R-xtable
 Version  : 1.8.3
-Release  : 23
+Release  : 24
 URL      : https://cran.r-project.org/src/contrib/xtable_1.8-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/xtable_1.8-3.tar.gz
 Summary  : Export Tables to LaTeX or HTML
 Group    : Development/Tools
 License  : GPL-2.0+
-Requires: R-highr
 BuildRequires : R-evaluate
 BuildRequires : R-highr
 BuildRequires : R-stringi
@@ -28,10 +27,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552836958
+export SOURCE_DATE_EPOCH=1552916283
 
 %install
-export SOURCE_DATE_EPOCH=1552836958
+export SOURCE_DATE_EPOCH=1552916283
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
