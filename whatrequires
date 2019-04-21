@@ -3,6 +3,8 @@ R-BayesFactor
 R-DT
 R-JM
 R-NMF
+R-SGP
+R-adegenet
 R-coin
 R-emmeans
 R-ggvis
@@ -12,7 +14,6 @@ R-lsmeans
 R-mcmc
 R-miniUI
 R-ordinal
-R-phangorn
 R-pkgmaker
 R-rglwidget
 R-robustbase
@@ -21,3 +22,4 @@ R-shinyBS
 R-shinydashboard
 R-shinystan
 R-shinythemes
+R-threejs
